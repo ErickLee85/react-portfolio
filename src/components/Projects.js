@@ -22,7 +22,7 @@ export const Projects = () => {
           },
           {
             title: "Sofware Development",
-            description: "OG Designs",
+            description: "Enterprise software",
             imgUrl: softwareImg,
             url: "https://www.google.com",
           },
@@ -36,7 +36,7 @@ export const Projects = () => {
                 {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                   <h2>Projects</h2>
-                  <p>Work in progress...</p>
+                  <p>Work in progress...These projects will range from Javascript frameworks to C#</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -79,7 +79,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Currently working on a 38 hour lecture on Udemy, building a Reactive Native Moblile App! I'll be sure to publish it as soon as I complete it!</p>
+                        <p>Currently working on a 38 hour lecture with Udemy, building a React Native Mobile App! I'll be sure to publish it as soon as I complete it!</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
