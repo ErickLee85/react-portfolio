@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import axios from "axios";
+import TrackVisibility from "react-on-screen";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
 
 export const Contact = () => {
@@ -63,7 +65,11 @@ export const Contact = () => {
                         <img src={contactImg} alt="contact us"/>
                     </Col>
                     <Col md={6}>
-                        <h2>Get In Touch</h2>
+                    <TrackVisibility>
+                        {({ isVisible }) =>
+                            <h2 className={isVisible ? "tagline animate__animated animate__flash animate__delay-1s animate__repeat-2" : "tagline"}>Get in touch</h2>
+                            }
+                        </TrackVisibility>
                         <form onSubmit={handleOnSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
