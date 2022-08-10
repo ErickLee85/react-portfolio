@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import angularImg from "../assets/img/angularImg.png";
-import reactImg from "../assets/img/reactImg.png";
+import paperRockScissors from "../assets/img/paper-rock-scissors.svg";
 import softwareImg from "../assets/img/softwareImg.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
@@ -15,10 +15,10 @@ export const Projects = () => {
             url: "https://ericklee85.github.io/angular-demo/",
           },
           {
-            title: "MERN Project",
-            description: "Coming Soon",
-            imgUrl: reactImg,
-            url: "https://www.google.com",
+            title: "Angular Game",
+            description: "The classic: Paper-Rock-Scissors",
+            imgUrl: paperRockScissors,
+            url: "https://ErickLee85.github.io/paper-rock-scissors/",
           },
           {
             title: "Sofware Development",
