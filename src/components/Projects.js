@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import angularImg from "../assets/img/angularImg.png";
 import paperRockScissors from "../assets/img/paper-rock-scissors.svg";
-import softwareImg from "../assets/img/softwareImg.png";
+import shoppingCart from "../assets/img/online-shop.svg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 
@@ -16,15 +16,15 @@ export const Projects = () => {
           },
           {
             title: "Angular Game",
-            description: "The classic: Paper-Rock-Scissors",
+            description: "The classic: Rock-Paper-Scissors",
             imgUrl: paperRockScissors,
             url: "https://ErickLee85.github.io/paper-rock-scissors/",
           },
           {
-            title: "Sofware Development",
-            description: "Enterprise Project",
-            imgUrl: softwareImg,
-            url: "https://www.google.com",
+            title: "Angular Project",
+            description: "Browse a list of products",
+            imgUrl: shoppingCart,
+            url: "https://ericklee85.github.io/angular-products/",
           },
     ]
     return (
